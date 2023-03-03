@@ -7,4 +7,5 @@ const productSchema = new mongooes.Schema({
   price: {
     type: String,
   },
+  
 });

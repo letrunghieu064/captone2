@@ -10,10 +10,12 @@ app.use(cors());
 const port = 6000;
 app.use(morgan("common"));
 dotenv.config();
+const authorRoute = require("./routes/user");
 //process.env.MONGODB_URL
 mongoose.connect(process.env.MONGODB_URL, () => {
   console.log(`connected to MongoDB `);
 });
+app.use("/v1/author", authorRoute);
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });

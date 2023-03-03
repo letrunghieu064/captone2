@@ -7,4 +7,12 @@ const userSchema = new mongooes.Schema({
   birthday: {
     type: String,
   },
+  username: {
+    type: String,
+  },
+  password: {
+    type: String,
+  },
 });
+let User = mongooes.model("User", userSchema);
+module.exports = { User };
