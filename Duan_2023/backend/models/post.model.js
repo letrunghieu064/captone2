@@ -1,5 +1,5 @@
 const mongooes = require("mongoose");
-const productSchema = new mongooes.Schema({
+const postSchema = new mongooes.Schema({
   name: {
     type: String,
     required: true,
@@ -8,5 +8,5 @@ const productSchema = new mongooes.Schema({
     type: String,
   },
 });
-let Product = mongooes.model("Product", productSchema);
-module.exports = { Product };
+let Post = mongooes.model("Post", postSchema);
+module.exports = { Post };
