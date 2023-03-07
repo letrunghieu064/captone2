@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Product from "../src/components/product/Product";
-import HistoryProduct from "./components/historyProduct/HistoryProduct";
+import Product from "../src/components/user/product/Product";
+import HistoryProduct from "../src/components/user/historyProduct/HistoryProduct";
 function App() {
   return (
     <div className="App">
