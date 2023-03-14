@@ -8,3 +8,5 @@ const productSchema = new mongooes.Schema({
     type: String,
   },
 });
+let Product = mongooes.model("Product", productSchema);
+module.exports = { Product };
